@@ -1,0 +1,60 @@
+:root {
+    --font-header: Arial;
+    --font-body: Helvetica;
+    --font-aside: Arial, Helvetica, sans-serif;
+    --primary-color: dimgrey;
+    --secondary-color: black;
+    --third-color: lightgrey;
+    --text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2fr 6fr 2fr;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 2rem;
+    
+}
+
+header {
+    font-family: var(--font-header);
+    grid-column: 1/-1;
+    grid-row: 1;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 200px;
+}
+
+main {
+    font-family: var(--font-body);
+    grid-column: 1/9;
+    grid-row: 2;
+    background-color: var(--third-color);
+}
+
+aside {
+    font-family: var(--font-aside);
+    grid-column: 9/13;
+    grid-row: 2;
+}
+
+footer {
+    font-family: var(--font-header);
+    grid-column: 1/-1;
+    grid-row: 3;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
