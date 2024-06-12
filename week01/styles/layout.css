@@ -25,6 +25,7 @@ nav {
     justify-content: space-around;
     background-color: var(--secondary-color);
     color: var(--text-color);
+    text-decoration: none;
     padding: 2rem;
     
 }
