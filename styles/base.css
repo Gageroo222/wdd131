@@ -14,7 +14,7 @@
     /* text colors */
     --light-text: #f7fff7;
     --medium-text: #f1d6ad;
-    --dark-text: #0c0c0c;
+    --dark-text: #000000;
     /* font size */
     --font-base: 20px;
     --font-small: 0.8em;
@@ -67,7 +67,7 @@ header {
 }
 
 .links a {
-    color: var(--nav-color);
+    color: var(--dark-text);
     text-decoration: none;
     font-size: var(--font-medium);
 }
@@ -86,6 +86,10 @@ header {
     flex-direction: column;
     border-radius: 2.5rem;
     background-color: var(--box-fill-color);
+}
+
+.link-card a {
+    color: var(--dark-text)
 }
 
 .content {
