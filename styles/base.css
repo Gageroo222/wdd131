@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');/* Roboto, Raleway, and Merriweather */
+/* Roboto, Raleway, and Merriweather */
+:root {
+    --font-header: 'Merriweather';
+    --font-headline: 'Roboto';
+    --font-body: 'Raleway';
+    /* colors */
+    --primary-color: #252323;
+    --secondary-color: #f5f1ed;
+    --box-heading-color: #a99985;
+    --box-fill-color: #dad2bc;
+    --nav-color: #70798c;
+    --nav-hover-color: #a63a50;
+    /* text colors */
+    --light-text: #f7fff7;
+    --medium-text: #f1d6ad;
+    --dark-text: #0c0c0c;
+    /* font size */
+    --font-base: 20px;
+    --font-small: 0.8em;
+    --font-medium: 1.5em;
+    --font-large: 2em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 5fr 1fr;
+    min-height: 100vh;
+    font-family: var(--font-body);
+}
+
+h1 {
+    font-family: var(--font-header);
+}
+h2 {
+    margin: 0.5em;
+    color: var(--light-text);
+    font-family: var(--font-headline);
+    font-size: var(--font-large);
+}
+
+header {
+    font-size: var(--font-large);
+    grid-column: 1/-1;
+    grid-row: 1;
+    color: var(--light-text);
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+}
+
+.links a {
+    color: var(--nav-color);
+    text-decoration: none;
+    font-size: var(--font-medium);
+}
+
+.links a:hover {
+    color: var(--nav-hover-color);
+}
+
+.header-links {
+    grid-column: 1/-1;
+    grid-row: 1;
+    flex-direction: row;
+}
+
+.link-card {
+    flex-direction: column;
+    border-radius: 2.5rem;
+    background-color: var(--box-fill-color);
+}
+
+.content {
+    grid-column: 1/-1;
+    grid-row: 2;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 10% 80% 10%;
+    min-height: 0;
+}
+
+.card {
+    display: grid;
+    grid-row: 2;
+    padding: 1em;
+    margin: 1em;
+    background-color: var(--box-fill-color);
+    border-radius: 2.5rem;
+}
+
+.card h2 {
+    background-color: var(--box-heading-color);
+    border-radius: 0.5rem;
+    margin-bottom: 1em;
+    
+    color: var(--dark-text);
+    text-align: center;
+}
+
+.card1 {
+    display: grid;
+    grid-template-rows: 10% 50% 10% 30%;
+}
+
+.card2 {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+}
+
+.card h1 {
+    grid-row: 3;
+    text-align: center;
+}
+
+.charlotte {
+    grid-row: 4;
+    font-size: var(--font-medium);
+    padding: 1em;
+}
+
+.city {
+    grid-row: 4;
+    border-radius: 1em;
+    float: right;
+    margin-right: 3em;
+}
+
+.intro {
+    grid-row: 2;
+    color: var(--dark-text);
+    font-size: var(--font-medium);
+    margin: 1em;
+}
+
+.profile {
+    grid-row: 2;
+    border-radius: 1em;
+    float: right;
+    width: 15rem;
+    height: auto;
+    margin: 1em;
+}
+
+footer {
+    grid-row: 3;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    grid-column: 1/-1;
+    font-size: var(--font-small);
+    color: var(--light-text);
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 100%;
+    justify-content: center;
+}
