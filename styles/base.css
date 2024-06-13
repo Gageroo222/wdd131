@@ -126,9 +126,10 @@ header {
     grid-template-rows: 10% 80% 10%;
 }
 
-.card h1 {
+.card h3 {
     grid-row: 3;
     text-align: center;
+    font-size: var(--font-medium);
 }
 
 .charlotte {
