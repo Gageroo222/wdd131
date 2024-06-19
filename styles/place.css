@@ -118,7 +118,7 @@ header h1 {
     padding-top: 20px;
     padding-bottom: 15px;
     background-color: var(--primary-color);
-    color: var(--head-text);
+    color: var(--text);
     font-family: var(--font-header);
 }
 
