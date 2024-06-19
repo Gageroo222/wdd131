@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Place | Gage Carter</title>
+    <meta name="description" content="WDD131 Place Page by Gage Carter">
+    <meta name="author" content="Gage Carter">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Bahamas</h1>
+    </header>
+
+    <main>
+
+        <section class=hero>
+            <picture>
+                <source srcset="images/mobile-bahamas.webp" media="(max-width: 545px)">
+                <img src="images/desktop-bahamas.webp" id="large-hero" alt="Lush Green Forest and Clear Water" width="545">
+            </picture>
+        </section>
+
+        <section id="data-list" class="container">
+            <h2>Data</h2>
+            <p><span class="bold">Area: </span>insert</p>
+            <p><span class="bold">Population: </span>insert</p>
+            <p><span class="bold">Capital: </span>insert</p>
+            <p><span class="bold">Languages: </span>insert</p>
+            <p><span class="bold">Currency: </span>insert</p>
+            <p><span class="bold">Time Zone: </span>insert</p>
+            <p><span class="bold">Calling Code: </span>insert</p>
+            <p><span class="bold">Internet TLD: </span>insert</p>
+        </section>
+
+        <section id="weather-list" class="container">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="weather" id="weather-svg" width="100">
+            <h3 id="weather-icon">⛅️</h3>
+            <p><span class="bold">Temperature: </span>insert</p>
+            <p><span class="bold">Conditions: </span>insert</p>
+            <p><span class="bold">Wind: </span>insert</p>
+            <p><span class="bold">Wind Chill: </span><span id="wind-chill"></span>°F</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> - Gage Carter - The Bahamas</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
