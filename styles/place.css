@@ -42,6 +42,7 @@ header h1 {
 }
 
 #hero {
+    position: relative;
     width: 100%;
     max-width: none;
 }
@@ -68,6 +69,7 @@ picture {
 }
 
 #weather-list {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,6 +163,10 @@ footer {
         position: absolute;
         bottom: 10%;
         right: 5%;
+    }
+
+    #weather-list h2::after {
+        content: "🌥️";
     }
 
     #weather-icon {
