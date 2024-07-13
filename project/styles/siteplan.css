@@ -1,9 +1,23 @@
 body {
     font-family: 'Comic Sans MS', sans-serif;
 }
+
 .font-chewy {
     font-family: 'Chewy', cursive;
 }
+
 .font-luckiest-guy {
     font-family: 'Luckiest Guy', cursive;
+}
+
+.color-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.color-box div {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
