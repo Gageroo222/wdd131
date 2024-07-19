@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz</title>
+    <meta name="description" content="WDD 131 Final Project, Trivia Page | Gage Carter">
+    <meta name="author" content="Gage Carter">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Comic+Sans+MS&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/trivia_master.css">
+    <script src="scripts/trivia_master.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Trivia Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="trivia_master.html">Home</a></li>
+                <li><a href="trivia_study.html">Study</a></li>
+                <li><a href="trivia_quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quiz">
+            <h2>Enter Your Name</h2>
+            <input type="text" id="playerName" placeholder="Enter your name">
+            <button onclick="startQuiz()">Start Quiz</button>
+            
+            <div id="quizQuestions" style="display:none;">
+                <h2>Trivia Quiz</h2>
+                <form id="quizForm">
+                    <div class="question">
+                        <p>Question 1: What is most commonly the very first language that you should have learned to begin creating websites?<span id="q1"></span></p>
+                        <label><input type="radio" name="q1" value="a">Python</label><br>
+                        <label><input type="radio" name="q1" value="b">Javascript</label><br>
+                        <label><input type="radio" name="q1" value="c">HTML</label><br>
+                        <label><input type="radio" name="q1" value="d">CSS</label><br>
+                    </div>
+                    <div class="question">
+                        <p>Question 2: What service, or control system are we required to use to post our websites for others to see?<span id="q2"></span></p>
+                        <label><input type="radio" name="q2" value="a">Visual Studio Code</label><br>
+                        <label><input type="radio" name="q2" value="b">GitHub</label><br>
+                        <label><input type="radio" name="q2" value="c">Google Chrome</label><br>
+                        <label><input type="radio" name="q2" value="d">Microsoft Office</label><br>
+                    </div>
+                    <div class="question">
+                        <p>Question 3: What was the extension that we were asked to install on our browser, that we can use to check for html and css errors?<span id="q3"></span></p>
+                        <label><input type="radio" name="q3" value="a">CSS Viewer</label><br>
+                        <label><input type="radio" name="q3" value="b">Codespace</label><br>
+                        <label><input type="radio" name="q3" value="c">Web Developer</label><br>
+                        <label><input type="radio" name="q3" value="d">Grammarly</label><br>
+                    </div>
+                    <div class="question">
+                        <p>Question 4: When adding an image to a web page, it is common practice to add text if the image is unable to load. What is this text called in your code?<span id="q4"></span></p>
+                        <label><input type="radio" name="q4" value="a">alt</label><br>
+                        <label><input type="radio" name="q4" value="b">value</label><br>
+                        <label><input type="radio" name="q4" value="c">span</label><br>
+                        <label><input type="radio" name="q4" value="d">id</label><br>
+                    </div>
+                    <div class="question">
+                        <p>Question 5: In CSS, it is a best practice to label all of your colors, fonts, and font sizes etc into a category at the top of your code, what is this section titled?<span id="q5"></span></p>
+                        <label><input type="radio" name="q5" value="a">html</label><br>
+                        <label><input type="radio" name="q5" value="b">*</label><br>
+                        <label><input type="radio" name="q5" value="c">main</label><br>
+                        <label><input type="radio" name="q5" value="d">root</label><br>
+                    </div>
+                    <div class="question">
+                        <p>Question 6: When submitting work, you should check your color contrast and make sure it passes at least which level?<span id="q6"></span></p>
+                        <label><input type="radio" name="q6" value="a">AAA</label><br>
+                        <label><input type="radio" name="q6" value="b">rgb</label><br>
+                        <label><input type="radio" name="q6" value="c">AA</label><br>
+                        <label><input type="radio" name="q6" value="d">rgba</label><br>
+                    </div>
+                    <div class="question">
+                        <p>Question 7: When creating a list of options, where only one option is to be selected, what type of input is the best fit?<span id="q7"></span></p>
+                        <label><input type="radio" name="q7" value="a">checkbox</label><br>
+                        <label><input type="radio" name="q7" value="b">button</label><br>
+                        <label><input type="radio" name="q7" value="c">radio</label><br>
+                        <label><input type="radio" name="q7" value="d">ul</label><br>
+                    </div>
+                    <div class="question">
+                        <p>Question 8: Which answer shows the correct order in which your html document should be structured?<span id="q8"></span></p>
+                        <label><input type="radio" name="q8" value="a">header, head, main, footer</label><br>
+                        <label><input type="radio" name="q8" value="b">main, head, header, footer</label><br>
+                        <label><input type="radio" name="q8" value="c">head, header, main, footer</label><br>
+                        <label><input type="radio" name="q8" value="d">footer, head, main, header</label><br>
+                    </div>
+                    <div class="question">
+                        <p>Question 9: In what order is a typical head element written?<span id="q9"></span></p>
+                        <label><input type="radio" name="q9" value="a">title, description, author, links</label><br>
+                        <label><input type="radio" name="q9" value="b">description, author, title, links</label><br>
+                        <label><input type="radio" name="q9" value="c">links, title, author, description</label><br>
+                        <label><input type="radio" name="q9" value="d">author, title, description, links</label><br>
+                    </div>
+                    <div class="question">
+                        <p>Question 10: When setting up GitHub, we created a space to keep and update all of our work, what is this space called?<span id="q10"></span></p>
+                        <label><input type="radio" name="q10" value="a">Folder</label><br>
+                        <label><input type="radio" name="q10" value="b">Root</label><br>
+                        <label><input type="radio" name="q10" value="c">Repository</label><br>
+                        <label><input type="radio" name="q10" value="d">Main</label><br>
+                    </div>
+                    
+                </form>
+                <div class="button-container">
+                    <button onclick="submitQuiz()">Submit Quiz</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 WDD 131 Trivia Master</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+:root {
+    --font-study-questions: 'Comic Sans MS';
+    --font-headings: 'Chewy';
+    --font-leaderboard: 'Luckiest Guy';
+    /* colors */
+    --primary-color: #ded492;
+    --secondary-color: #d5864e;
+    --box-heading-color: #713f32;
+    --box-fill-color: #b0c9a4;
+    --nav-color: #505c54;
+    --nav-hover-color: #dda966;
+    /* text colors */
+    --head-text: #ffffff;
+    --text: #000000;
+    /* font size */
+    --font-base: 16px;
+    --font-small: 1em;
+    --font-medium: 1.5em;
+    --font-large: 3em;
+}
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+.site-footer {
+    background-color: blue; 
+    color: #FFD700; 
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+header {
+    background-color: blue;
+    color: gold;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Chewy', cursive;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: gold;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#study, #quiz, #leaderboard {
+    margin: 20px 0;
+}
+
+#quiz h2, #leaderboard h2 {
+    font-family: 'Chewy', cursive;
+}
+
+#studyMaterials {
+    font-family: 'Comic Sans MS';
+    padding-bottom: 50px;
+}
+
+#studyMaterials h2 {
+    text-align: center;
+    font-family: 'Chewy', cursive;
+}
+
+#studyFinish {
+    text-align: center;
+}
+
+#quiz {
+    background-color: limegreen;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+#quizQuestions {
+    font-family: 'Comic Sans MS';
+}
+#quizQuestions h2 {
+    font-family: 'Chewy', cursive;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    font-size: var(--font-medium); 
+    padding: 10px 20px; 
+
+#quiz p {
+    color: blueviolet;
+}
+
+#leaderboard {
+    font-family: 'Luckiest Guy', cursive;
+    color: orangered;
+    text-align: center;
+    padding: 20px;
+}
+
+#leaderboard h2 {
+    font-family: 'Chewy', cursive;
+}
+
+#leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#leaderboard th, #leaderboard td {
+    border: 1px solid orangered;
+    padding: 10px;
+    text-align: center;
+}
+
+#leaderboard th {
+    background-color: orangered;
+    color: white;
+}
+
+footer {
+    background-color: blue;
+    color: gold;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
