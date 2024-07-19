@@ -29,7 +29,7 @@ body {
 
 main {
     flex: 1;
-    padding-bottom: 20px;
+    padding-bottom: 20px; /* Adjust padding as needed */
 }
 
 .site-footer {
@@ -105,16 +105,6 @@ main {
     font-family: 'Chewy', cursive;
     text-align: center;
 }
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.button-container button {
-    font-size: var(--font-medium); 
-    padding: 10px 20px; 
 
 #quiz p {
     color: blueviolet;
